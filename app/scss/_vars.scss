@@ -1,0 +1,76 @@
+$accent: #436372;
+$default: #243f4d;
+$second: #fbd7b5;
+$warm: #fbd6b5;
+$text: #436372;
+$btn: #a3bbc8;
+$title: #191919;
+$sub-title: #414141;
+$dark: #1a1a1a;
+$grey: #7b7b7b;
+$high: #fff;
+
+%dmsans-regular {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-medium {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-bold {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+}
+
+%poppins-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+%rubik-light {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+%rubik-regular {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-medium {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-bold {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+%btn {
+    border: none;
+    background: $accent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

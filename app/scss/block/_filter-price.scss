@@ -1,0 +1,42 @@
+.filter-price{
+    &__form-box{
+        margin-top: 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .irs--flat{
+        height: auto;
+    }
+    .irs--flat .irs-min, .irs--flat .irs-max {
+        display: none;
+    }
+    .irs-line{
+        background-color: $btn;
+        top: 0;
+        height: 2px;
+        border-radius: 0;
+        opacity: .66;
+    }
+    .irs-bar {
+        background-color: $btn;
+        top: -1px;
+        height: 3px;
+    }
+    .irs-single, .irs-from, .irs-to, .irs-from::before, .irs-to::before{
+        display: none;
+    }
+    .irs--flat .irs-handle{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        background-color: $btn;
+        border-radius: 0;
+        display: block;
+        top: -7px;
+        cursor: pointer;
+        i{
+            display: none;
+        }
+    }
+}

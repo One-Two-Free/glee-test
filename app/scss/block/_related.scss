@@ -1,0 +1,9 @@
+.related{
+    &__title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        color: #243f4d;
+        text-align: left;
+        @extend %dmsans-bold;
+    }
+}

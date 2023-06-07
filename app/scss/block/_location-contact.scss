@@ -1,0 +1,48 @@
+.location-contact{
+    width: 370px;
+    height: 382px;
+    background-color: #fbfbfb;
+    padding-top: 70px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: transparent;
+    &__pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 6px 28.5px rgba(37,37,37,0.05));
+        background-color: #ffffff;
+        margin-bottom: 56px;
+    }
+    &__pic svg path{
+        fill: #a3bbc8;
+    }
+    &__title{
+        @extend %dmsans-bold;
+        font-size: 20px;
+        line-height: 26px;
+        color: #222222;
+        margin-bottom: 10px;
+    }
+    &__info{
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+}
+
+.location-contact:hover {
+    border: 2px solid #a3bbc8;
+    .location-contact__pic{
+        filter: drop-shadow(0px 6px 28.5px rgba(37,37,37,0.05));
+        background-color: #a3bbc8;
+    }
+    .location-contact__pic svg path{
+        fill: #fff;
+    }
+}

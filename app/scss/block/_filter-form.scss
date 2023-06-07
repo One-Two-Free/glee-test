@@ -1,0 +1,40 @@
+.filter-form{
+    &__bg{
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: .2;
+        display: block;
+    }
+    &__label{
+        position: relative;
+        display: flex;
+        height: 42px;
+        align-items: center;
+        padding: 0 15px 0 10px;
+        cursor: pointer;
+        z-index: 2;
+        margin-bottom: 4px;
+    }
+    &__label:hover &__bg{
+        background-color: $btn;
+    }
+    &__input:checked ~ .filter-form__bg{
+        background-color: $btn;
+    }
+    &--arrow &__label::after{
+        content: '';
+        margin-left: auto;
+        display: block;
+        width: 5px;
+        height: 10px;
+        background-image: url(../../images/icons/arrow-right.svg);
+    }
+    &__num{
+        margin-left: auto;
+    }
+}

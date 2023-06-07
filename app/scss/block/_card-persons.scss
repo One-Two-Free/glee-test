@@ -1,0 +1,119 @@
+.card-persons{
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 48%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__body{
+        flex-grow: 1;
+        position: relative;
+        z-index: 5;
+        background: #fff;
+        padding: 30px 20px;
+        display: flex;
+        max-width: 320px;
+        margin-top: -50px;
+        filter: drop-shadow(0px 6px 28.5px rgba(37,37,37,0.08));
+    }
+    &__body-box{
+        margin-right: auto;
+    }
+    &__name{
+        display: block;
+        @extend %dmsans-bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: $accent;
+    }
+    &__text{
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+        display: block;
+    }
+    &__link{
+        width: 41px;
+        height: 41px;
+        border-radius: 21px;
+        background-color: #f6f6f6;
+        margin: 10px 5px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 1000px){
+    .card-persons{
+        &__body{
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .card-persons{
+        &__body{
+            flex-wrap: wrap;
+            padding: 20px 15px;
+        }
+        &__body-box{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .card-persons{
+        &__body{
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .card-persons{
+        &__item{
+            width: 49%;
+            margin-bottom: 20px;
+        }
+        &__body{
+            padding: 15px;
+        }
+        &__link{
+            width: 30px;
+            height: 30px;
+            
+            img{
+                width: 14px;height: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .card-persons{
+        &__body{
+            flex-wrap: wrap;
+        }
+        &__name{
+            font-size: 18px;
+            line-height: 1.2;
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 1.2;
+        }
+    }
+}

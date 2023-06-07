@@ -1,0 +1,20 @@
+.data-box{
+    padding-top: 22px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    &__data, &__author{
+        @extend %dmsans-medium;
+        font-size: 12px;
+        line-height: 1;
+        color: #222933;
+    }
+    &__data{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .data-box{
+        padding-top: 14px;
+    }
+}

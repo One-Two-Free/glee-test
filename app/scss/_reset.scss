@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  outline: 0;
+}
+
+html,
+body {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  // height: 100%;
+
+  resize: none;
+
+  outline: none;
+
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0);
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+       -o-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+
+  border-collapse: collapse;
+}
+
+fieldset,
+img {
+  vertical-align: middle;
+
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol,
+ul {
+  box-sizing: border-box;
+
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+button,
+input,
+textarea,
+select {
+  box-sizing: border-box;
+
+  resize: none;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+
+  border: 0;
+  outline: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  -webkit-appearance: none;
+       -o-user-select: text;
+   -khtml-user-select: text;
+}
+
+label,
+input[type=button],
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+
+  -webkit-appearance: none;
+       -o-user-select: none;
+   -khtml-user-select: none;
+}
+
+input[type='radio'].radio,
+input[type='checkbox'].checkbox {
+  display: none;
+}
+
+legend {
+  color: #000000;
+}
+
+p {
+  // -webkit-hyphens: auto;
+    //  -moz-hyphens: auto;
+          // hyphens: auto;
+
+      // -ms-hyphens: auto;
+}
+
+a {
+  text-decoration: none;
+
+  outline: 0;
+}
+
+svg {
+  vertical-align: top;
+}

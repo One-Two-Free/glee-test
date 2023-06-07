@@ -1,0 +1,73 @@
+.jq-number{
+    font-size: 0;
+    line-height: 1;
+    vertical-align: top;
+    &__field {
+        border: 1px solid #a3bbc8;
+        border-radius: 0;
+        box-shadow: none;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__field input {
+        width: 100%;
+        border: none;
+        outline: none;
+        // @extend %quicksand-500;
+        color: $title;
+        text-align: center;
+
+        font-size: 15px;
+        line-height: 46px;
+        color: #333333;
+        @extend %rubik-regular;
+    }
+    & {
+        padding: 0;
+        position: relative;
+    }
+    &__spin {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #a3bbc8;
+    }
+    &__spin::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: #29282d;
+        width: 12px;
+        height: 1px;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__spin.plus::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 0;
+        background-color: #29282d;
+        width: 1px;
+        height: 12px;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__spin.minus{
+        order: -1;
+    }
+    &__spin.plus{
+    }
+}
+
+

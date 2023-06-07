@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 400;
+    font-style: normal;
+    src: local('DMSans-Regular'),
+        url('../fonts/dmsans-regular.woff2') format('woff2'),
+        url('../fonts/dmsans-regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 500;
+    font-style: normal;
+    src: local('DMSans-Medium'),
+        url('../fonts/dmsans-medium.woff2') format('woff2'),
+        url('../fonts/dmsans-medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 700;
+    font-style: normal;
+    src: local('DMSans-Bold'),
+        url('../fonts/dmsans-bold.woff2') format('woff2'),
+        url('../fonts/dmsans-bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Poppins-Bold'),
+        url('../fonts/poppins-bold.woff2') format('woff2'),
+        url('../fonts/poppins-bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Rubik-Light'),
+        url('../fonts/rubik-light.woff2') format('woff2'),
+        url('../fonts/rubik-light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Rubik-Regular'),
+        url('../fonts/rubik-regular.woff2') format('woff2'),
+        url('../fonts/rubik-regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Rubik-Medium'),
+        url('../fonts/rubik-medium.woff2') format('woff2'),
+        url('../fonts/rubik-medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Rubik-Bold'),
+        url('../fonts/rubik-bold.woff2') format('woff2'),
+        url('../fonts/rubik-bold.woff') format('woff');
+    font-display: swap;
+}

@@ -1,0 +1,75 @@
+.page-section{
+    overflow-x: hidden;
+    padding-top: 77px;
+    &__title-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__link-all{
+        @extend %dmsans-bold;
+        display: block;
+        font-size: 16px;
+        line-height: 1;
+        color: #262626;
+        &::after{
+            content: '';
+            width: 7px;
+            height: 12px;
+            display: inline-block;
+            margin-left: 10px;
+            background-image: url(../../images/icons/blog-arrow.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    &__filter-products{
+        padding: 38px 0 76px;
+    }
+    &__card-articles{
+        position: relative;
+        z-index: 10;
+        margin: 45px -15px 0;
+    }
+    &__inner{
+        position: relative;
+    }
+    &__container{
+        position: relative;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 950px){
+    .page-section{
+        &__card-articles{
+            margin: 40px -10px 0;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .page-section{
+        &__filter-products{
+            padding: 15px 0 30px;
+        }
+        &__title-box{
+            display: block;
+        }
+        &__link-all{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .page-section{
+        padding-top: 56px;
+        &__filter-products{
+            padding: 10px 0 15px;
+        }
+    }
+}

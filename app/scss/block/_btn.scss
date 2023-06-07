@@ -1,0 +1,31 @@
+.btn{
+    width: 170px;
+    min-height: 50px;
+    margin-top: 30px;
+    background: $btn;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+
+    @extend %poppins-bold;
+    font-size: 15px;
+    line-height: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 11px;
+        background-image: url(../../images/icons/btn-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+

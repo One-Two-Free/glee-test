@@ -1,0 +1,53 @@
+.team{
+    &__inner{
+        display: flex;
+    }
+    &__asaid{
+        width: 400px;
+        padding-right: 30px;
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    &__text{
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: $default;
+        max-width: 300px;
+    }
+    &__card-persons{
+        width: 770px;
+    }
+}
+
+@media (max-width: 900px){
+    .team{
+        &__text{
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .team{
+        &__inner{
+            display: block;
+        }
+        &__asaid{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        &__text{
+            max-width: none;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        &__card-persons{
+            width: 100%;
+        }
+    }
+}

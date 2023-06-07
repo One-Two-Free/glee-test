@@ -1,0 +1,42 @@
+.footer-second{
+    display: flex;
+    min-height: 90px;
+    align-items: center;
+    &__copy{
+        font-size: 14px;
+        line-height: 1;
+        color: $grey;
+        @extend %rubik-regular;
+    }
+    &__nav{
+        margin-left: auto;
+        display: flex;
+    }
+    &__nav-link{
+        font-size: 14px;
+        line-height: 1;
+        color: $grey;
+        @extend %rubik-regular;
+    }
+    &__nav > span{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1;
+        color: $grey;
+        @extend %rubik-regular;
+        margin: 0 10px;
+    }
+    &__nav-link:first-child::before{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .footer-second{
+        flex-direction: column;
+        justify-content: center;
+        &__nav{
+            margin: 20px 0 0;
+        }
+    }
+}

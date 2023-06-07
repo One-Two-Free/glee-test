@@ -1,0 +1,137 @@
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0 75px;
+    justify-content: space-between;
+    position: relative;
+    &::after{
+        content: '';
+        bottom: 0;
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: $btn;
+        opacity: .4;
+    }
+    &__col{
+        width: 270px;
+    }
+    &__logo{
+        margin-bottom: 27px;
+        display: block;
+    }
+    &__addres{
+        max-width: 200px;
+    }
+    &__addres,&__email,&__phone{
+        @extend %rubik-regular;
+        font-size: 14px;
+        line-height: 24px;
+        color: $grey;
+        display: block;
+        margin-bottom: 16px;
+    }
+    &__title{
+        @extend %dmsans-bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+    &__link{
+        @extend %rubik-regular;
+        font-size: 14px;
+        line-height: 32px;
+        color: $grey;
+        display: block;
+    }
+    &__text{
+        color: $grey;
+        @extend %rubik-regular;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 36px;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__form-input{
+        background: $second;
+        width: 170px;
+        height: 38px;
+        padding: 0 20px;
+        font-size: 12px;
+        color: #234969;
+        @extend %dmsans-regular;
+    }
+    &__form-btn{
+        width: 100px;
+        height: 38px;
+        background-color: $btn;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+        @extend %dmsans-regular;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1100px){
+    .footer-main{
+        
+        &__nav{
+            width: 200px;
+        }
+        
+    }
+}
+
+@media (max-width: 1000px){
+    .footer-main{
+        justify-content: flex-start;
+        &__box-form{
+            width: 100%;
+        }
+        
+    }
+}
+
+@media (max-width: 750px){
+    .footer-main{
+        &__contact{
+            width: 50%;
+        }
+        &__nav{
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .footer-main{
+        &__contact{
+            width: 100%;
+        }
+        &__nav{
+            width: 170px;
+        }
+        &__title{
+            margin: 25px 0 10px;
+        }
+        &__text{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .footer-main{
+        &__form-input,&__form-btn{
+            width: 100%;
+        }
+    }
+}

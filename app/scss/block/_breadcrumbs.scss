@@ -1,0 +1,26 @@
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        position: relative;
+        &::after {
+            content: '/';
+            display: inline-block;
+            margin: 0 12px;
+            @extend %rubik-regular;
+            font-size: 14px;
+            line-height: 1;
+            color: #222933;
+            opacity: .6;
+        }
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

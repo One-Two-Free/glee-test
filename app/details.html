@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/index.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/icons/logo.svg" alt="">
+                        <span class="logo__name">Glee.</span>
+                    </a>
+                    <nav class="menu">
+                        <button class="menu__btn"><span></span></button>
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="/index.html">Home</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="/aboutus.html">About</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="/terms.html">Services</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="/shop.html">Pages</a></li>
+                            <li class="menu__list-item"><span class="menu__list-link menu__list-link--active">News</span></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-nav">
+                        <a class="user-nav__link" href="#">
+                            <img class="user-nav__img" src="images/icons/search.svg" alt="">
+                        </a>
+                        <div class="user-nav__box">
+                            <a class="user-nav__inner-link" href="#">
+                                <img class="user-nav__inner-img" src="images/icons/heart.svg" alt="">
+                                <span class="user-nav__num">0</span>
+                            </a>
+                            <a class="user-nav__inner-link" href="#">
+                                <img class="user-nav__inner-img" src="images/icons/cart.svg" alt="">
+                                <span class="user-nav__num">0</span>
+                            </a>
+                        </div>
+                        <a class="user-nav__link" href="#">
+                            <img class="user-nav__img" src="images/icons/user.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <section class="top">
+                <div class="top__container">
+                    <div class="container">
+                        <h2 class="top__title">Product detalis</h2>
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Home</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Product detalis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-page">
+                <div class="container">
+                    <div class="product-detail">
+                        <div class="product-detail__inner">
+                            <div class="product-detail__slide product-slide">
+                                <div class="product-slide__thumb">
+                                    <div class="product-slide__thumb-item">
+                                        <img src="images/detail/biglamp.png" alt="">
+                                    </div>
+                                    <div class="product-slide__thumb-item">
+                                        <img src="images/detail/lamp1.png" alt="">
+                                    </div>
+                                    <div class="product-slide__thumb-item">
+                                        <img src="images/detail/lamp3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-slide__big">
+                                    <div class="product-slide__big-item">
+                                        <img src="images/detail/biglamp.png" alt="">
+                                    </div>
+                                    <div class="product-slide__big-item">
+                                        <img src="images/detail/lamp1.png" alt="">
+                                    </div>
+                                    <div class="product-slide__big-item">
+                                        <img src="images/detail/lamp3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__content">
+                                <h2 class="product-detail__title">Pendant lamp</h2>
+                                <div class="product-detail__box">
+                                    <div class="product-detail__item-star">
+                                        <div class="star" data-rateyo-rating="3"></div>
+                                    </div>
+                                    <div class="product-detail__price">
+                                       23$
+                                    </div>
+                                </div>
+                                <p class="product-detail__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                </p>
+                                <form class="product-detail__item-form product-filter" action="#">
+                                    <div class="product-detail__item-info product-info">
+                                        <input class="product-detail__item-num" type="number" value="1" min="1">
+                                        <button class="product-detail__item-btn" type="submit">Add to cart</button>
+                                        <ul class="product-info__list">
+                                            <li class="product-info__item">
+                                                <div class="product-info__title">SKU:</div>
+                                                <div class="product-info__text">014</div>
+                                            </li>
+                                            <li class="product-info__item">
+                                                <div class="product-info__title">Category:</div>
+                                                <div class="product-info__text">Lights</div>
+                                            </li>
+                                            <li class="product-info__item">
+                                                <div class="product-info__title">Tag:</div>
+                                                <div class="product-info__text">Decorative</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tabs">
+                        <div class="product-tabs__top">
+                            <a class="product-tabs__top-item" href="#tab-1">Description</a>
+                            <a class="product-tabs__top-item" href="#tab-2">Additional information</a>
+                            <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-3">Reviews(2)</a>
+                        </div>
+                        <div class="product-tabs__content">
+                            <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-1">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div class="product-tabs__content-item" id="tab-2">uiouio</div>
+                            <div class="product-tabs__content-item" id="tab-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related">
+                <div class="container">
+                    <h3 class="title related__title">Related products</h3>
+                    <div class="card-products card-products__js">
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c35-1938x782-1.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Wooden radio</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/1938x782-Rixoschr-1.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Wooden radio</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/C_Garuda-1-1938_782.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">White chair</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c111-1938_782-111.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Retro table</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c111-1938_782-111.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Retro table</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c111-1938_782-111.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Retro table</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c111-1938_782-111.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Retro table</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                        <div class="card-products__item">
+                            <div class="card-products__item-inner">
+                                <div class="card-products__img-box">
+                                    <img class="card-products__img" src="images/c111-1938_782-111.png" alt="">
+                                    <div class="card-products__link-box">
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/searc2.svg" alt=""></a>
+                                        <a class="card-products__link card-products__link--active" href="#"><img class="card-products__link-ico" src="images/icons/cart2.svg" alt=""></a>
+                                        <a class="card-products__link" href="#"><img class="card-products__link-ico" src="images/icons/heart2.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <p class="card-products__title">Retro table</p>
+                                <p class="card-products__price">$29.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section">
+                <div class="container page-section__container">
+                    <div class="page-section__inner">
+                        <div class="page-section__title-box">
+                            <h2 class="title">Our Insights & Articles</h2>
+                            <a class="page-section__link-all" href="#">View All</a>
+                        </div>
+                        
+                        <div class="card-articles page-section__card-articles">
+                            <div class="card-articles__inner">
+                                <div class="card-articles__item">
+                                    <a class="card-articles__img-link" href="#">
+                                        <img class="card-articles__img" src="images/interier/1.png" alt="">
+                                    </a>
+                                    <div class="card-articles__box">
+                                        <span class="card-articles__label">News</span>
+                                        <p class="card-articles__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <div class="data-box">
+                                            <span class="data-box__data">28 JANUARY, 2020</span>
+                                            <a class="data-box__author" href="#">BY ADMIN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-articles__inner">
+                                <div class="card-articles__item">
+                                    <a class="card-articles__img-link" href="#">
+                                        <img class="card-articles__img" src="images/interier/2.png" alt="">
+                                    </a>
+                                    <div class="card-articles__box">
+                                        <span class="card-articles__label">News</span>
+                                        <p class="card-articles__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                        <div class="data-box">
+                                            <span class="data-box__data">28 JANUARY, 2020</span>
+                                            <a class="data-box__author" href="#">BY ADMIN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-articles__inner">
+                                <div class="card-articles__item">
+                                    <a class="card-articles__img-link" href="#">
+                                        <img class="card-articles__img" src="images/interier/3.png" alt="">
+                                    </a>
+                                    <div class="card-articles__box">
+                                        <span class="card-articles__label">News</span>
+                                        <p class="card-articles__text">Rncididunt ut labore et dolore magna aliqua. Ut enim</p>
+                                        <div class="data-box">
+                                            <span class="data-box__data">28 JANUARY, 2020</span>
+                                            <a class="data-box__author" href="#">BY ADMIN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners page-section__partners">
+                    <div class="container">
+                        <ul class="partners__list">
+                            <li class="partners__item"><img src="images/partners/1.png" alt=""></li>
+                            <li class="partners__item"><img src="images/partners/2.png" alt=""></li>
+                            <li class="partners__item"><img src="images/partners/3.png" alt=""></li>
+                            <li class="partners__item"><img src="images/partners/4.png" alt=""></li>
+                            <li class="partners__item"><img src="images/partners/5.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-main">
+                        <div class="footer-main__col footer-main__contact">
+                            <a class="logo footer-main__logo" href="#">
+                                <img class="logo__img" src="images/icons/logo.svg" alt="">
+                                <span class="logo__name">Glee.</span>
+                            </a>
+                            <a class="footer-main__addres" href="#">ADDRESS: 4772 Wines Lane Houston, TX 77032</a>
+                            <a class="footer-main__email" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+                            <a class="footer-main__phone" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+                        </div>
+                        <div class="footer-main__col footer-main__nav">
+                            <h6 class="footer-main__title">Services</h6>
+                            <ul class="footer-main__list">
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">About us</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Return Policy</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Our Blog</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Contact Us</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-main__col footer-main__nav">
+                            <h6 class="footer-main__title">Account</h6>
+                            <ul class="footer-main__list">
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Your Account</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Checkout</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Login</a></li>
+                                <li class="footer-main__item"><a class="footer-main__link" href="#">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-main__col footer-main__box-form">
+                            <h6 class="footer-main__title">newsletter</h6>
+                            <p class="footer-main__text">Subscribe by our newsletter and get update protidin.</p>
+                            <form action="" class="footer-main__form">
+                                <input class="footer-main__form-input" type="text" placeholder="Email address">
+                                <button class="footer-main__form-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="footer-second">
+                        <div class="footer-second__copy">©2020 CopyRight Example. All rights reserved. </div>
+                        <div class="footer-second__nav">
+                            <a class="footer-second__nav-link" href="#">Home</a>
+                            <span>|</span>
+                            <a class="footer-second__nav-link" href="#">About</a>
+                            <span>|</span>
+                            <a class="footer-second__nav-link" href="#">Blog</a>
+                            <span>|</span>
+                            <a class="footer-second__nav-link" href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

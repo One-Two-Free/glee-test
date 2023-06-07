@@ -1,0 +1,9 @@
+.logo{
+    &__name{
+        @extend %rubik-medium;
+        font-size: 36px;
+        line-height: 1;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}

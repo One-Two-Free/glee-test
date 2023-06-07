@@ -1,0 +1,29 @@
+.top{
+    &__container{
+        position: relative;
+        padding: 35px 0 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            opacity: .2;            
+            background: $btn;
+        }
+    }
+    &__title{
+        @extend %rubik-light;
+        font-size: 36px;
+        line-height: 1;
+        color: #222933;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .container{
+        position: relative;
+        z-index: 2;
+    }
+}

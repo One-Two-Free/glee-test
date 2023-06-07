@@ -1,0 +1,31 @@
+.product-recent{
+    &__item{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__img-box{
+        width: 70px;
+        text-align: center;
+    }
+    &__name{
+        line-height: 1;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__content{
+        margin-left: 15px;
+    }
+    .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+        margin-left: 10px!important;
+    }
+    .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg:first-child {
+        margin: 0!important;
+    }
+    .jq-ry-container{
+        padding: 0;
+    }
+    .star-small{
+        width: auto!important;
+        margin-bottom: 5px;
+    }
+}

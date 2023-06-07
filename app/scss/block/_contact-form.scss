@@ -1,0 +1,51 @@
+.contact-form{
+    width: 620px;
+    max-width: 53%;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__inner{
+        padding: 0 50px 0 20px;
+        max-width: 300px;
+        width: 49%;
+        height: 50px;
+        background-color: rgba(245, 245, 245, 0.5);
+    }
+    &__input{
+        opacity: 0.800;
+        font-size: 16px;
+        line-height: 50px;
+        color: #565872;
+        @extend %rubik-regular;
+        text-align: left;
+        background: none;
+    }
+    &__box-text{
+        padding: 15px 50px 15px 20px;
+        min-height: 175px;
+        background-color: rgba(245, 245, 245, 0.5);
+        margin-bottom: 28px;
+    }
+    &__textarea{
+        opacity: 0.800;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+        @extend %rubik-regular;
+        text-align: left;
+        background: none;
+    }
+    &__btn{
+        width: 200px;
+        // height: 50px;
+        border-radius: 5px;
+        background-color: #a3bbc8;
+
+        font-size: 15px;
+        line-height: 50px;
+        color: #ffffff;
+        @extend %poppins-bold;
+    }
+}

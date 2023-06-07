@@ -1,0 +1,140 @@
+.special{
+    margin-top: 180px;
+    &__container{
+        max-width: 1740px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    &__inner{
+        display: flex;
+    }
+    &__item{
+        width: 50%;
+        min-height: 390px;
+        background-color: $warm;
+        margin-right: 15px;
+        display: flex;
+    }
+    &__item + .special__item{
+        margin: 0 0 0 15px;
+    }
+    &__img-box{
+        width: 370px;
+        text-align: right;
+        margin-top: -100px;
+    }
+    &__content{
+        padding: 100px 20px 80px 30px;
+    }
+    &__title{
+        @extend %dmsans-bold;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $default;
+        margin-bottom: 18px;
+    }
+    &__info{
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: $default;
+    }
+    &__link{
+        width: 180px;
+        min-height: 60px;
+        margin-top: 30px;
+        background: none;
+        border: 1px solid $accent;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        &::after{
+            content: '';
+            display: block;
+            width: 24px;
+            height: 10px;
+            background-image: url(../../images/icons/arrow-link-dark.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__link-name{
+        @extend %rubik-medium;
+        font-size: 15px;
+        line-height: 1;
+        color: $text;
+    }
+    &__img{
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .special{
+        &__img-box{
+            width: 170px;
+            margin-top: 50px;
+        }
+        &__content{
+            padding: 60px 20px 40px 30px;
+        }
+        &__item{
+            min-height: 360px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .special{
+        &__item{
+            min-height: 300px;
+            margin-right: 5px;
+            & + .special__item{
+                margin: 0 0 0 5px;
+            }
+        }
+        &__img-box{
+            display: none;
+        }
+        &__content{
+            padding: 30px 20px 36px 30px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .special{
+        &__title{
+            font-size: 22px;
+        }
+        &__content{
+            padding: 15px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .special{
+        &__inner{
+            display: block;
+        }
+        &__item{
+            display: block;
+            min-height: 200px;
+            margin: 0;
+            width: auto;
+            & + .special__item{
+                margin: 10px 0 0;
+            }
+        }
+        &__link{
+            width: 140px;
+            padding: 0 10px;
+            min-height: 40px;
+            margin-top: 20px;
+        }
+    }
+}

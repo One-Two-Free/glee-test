@@ -1,0 +1,55 @@
+.shop-content{
+    flex-grow: 1;
+    &__filter-buttons{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        // border: 1px solid black;
+
+        font-size: 20px;
+        line-height: 1.2;
+        color: $default;
+        @extend %dmsans-medium ;
+    }
+    &__filter-btn{
+        background: none;
+        cursor: pointer;
+        line-height: 0;
+
+        path{
+            fill: $btn;
+        }
+    }
+    &__filter-btn.btn-active{
+        path{
+            fill: $accent;
+        }
+    }
+
+    .button-grid{
+        margin-left: auto;
+    }
+    .button-list{
+        margin-left: 20px;
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        // box-shadow: 0 0 5px 2px rgba(0,255,0,.1);
+        margin: 0 -15px;
+    }
+    &__cards--list{
+        display: block;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .shop-content{
+        &__cards{
+            margin: 0;
+            justify-content: space-between;
+        }
+    }
+}

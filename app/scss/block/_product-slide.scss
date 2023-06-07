@@ -1,0 +1,28 @@
+.product-slide{
+    display: flex;
+
+    &__thumb{
+        width: 170px;
+        margin-right: 30px;
+    }
+    &__thumb-item img {
+        width: 170px;
+        height: 170px;
+        object-fit: contain;
+    }
+    
+    .slick-vertical .slick-slide{
+        height: 170px;
+        margin-bottom: 30px;
+    }
+
+    &__big{
+        width: 370px;
+    }
+
+    &__big-item{
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+    }
+}

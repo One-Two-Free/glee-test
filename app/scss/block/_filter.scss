@@ -1,0 +1,27 @@
+.filter{
+    &__item{
+        margin-bottom: 70px;
+    }
+    &__title{
+        font-size: 18px;
+        line-height: 1;
+        color: $default;
+        @extend %dmsans-bold ;
+        margin-bottom: 25px;
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 38px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #a3bbc8;
+            vertical-align: top;
+            margin: 8px 0 0 20px;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: $default;
+        @extend %rubik-regular;
+    }
+}
