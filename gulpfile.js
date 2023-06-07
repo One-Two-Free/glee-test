@@ -61,7 +61,7 @@ function images() {
 			]
 		})
 	]))
-	.pipe(dest('dist/images'))
+	.pipe(dest('docs/images'))
 }
 
 function scripts() {
@@ -87,11 +87,11 @@ function build() {
 		'app/js/main.min.js',
 		'app/fonts/*'
 	], {base: 'app'})
-	.pipe(dest('dist'))
+	.pipe(dest('docs'))
 }
 
-function cleanDist() {
-	return del('dist')
+function cleanDocs() {
+	return del('docs')
 }
 
 function watching() {
@@ -135,8 +135,8 @@ exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
-exports.cleanDist = cleanDist;
+exports.cleanDocs = cleanDocs;
 // exports.svg_sprite = svg_sprite;
-exports.build = series(cleanDist, svg_sprite, images, build);
+exports.build = series(cleanDocs, svg_sprite, images, build);
 
 exports.default = parallel(styles, svg_sprite, scripts, browsersync, watching);
